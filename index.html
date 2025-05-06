@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trending Topics - Real Time Updates</title>
+  <!-- Using Bootstrap CSS for a responsive layout -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-primary text-white py-3 mb-4">
+    <div class="container">
+      <h1 class="mb-0">Trending Topics</h1>
+      <p class="lead">Real time updates on current trends</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="trends-container" class="list-group">
+      <!-- Trending topics will be appended here -->
+    </div>
+  </main>
+  
+  <!-- Socket.io client for real time communication -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Client-side custom JavaScript to handle updates -->
+  <script src="app.js"></script>
+</body>
+</html>
